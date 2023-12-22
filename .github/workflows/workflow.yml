@@ -24,7 +24,7 @@ jobs:
           aws-access-key-id:${{ secrets.ASIAW6ODLGKZGSUKTUOX }}
           aws-secret-access-key:${{ secrets.KVwOhFJD7ryvyeM8u+hwmhYF5Z2HUxYfyur39CBe }}
           aws-session-token:${{ secrets.IQoJb3JpZ2luX2VjEK7//////////wEaCXVzLWVhc3QtMSJIMEYCIQCt5TDJoaZLJ3d+dTTwcsu8N0F+0HAogYxlp8zu5M8LLwIhALJHNqI/cUihyGdpDh/aZH7O3Qsh8TqqcbdmcRpN/jNhKp4DCDcQABoMNDc3Njg3OTE5MjgyIgzhtQEgGSJY645Y5Scq+wLAQiUAkCcMU9WPHwSsA2FFrNko3p5aiMHeO30xz/l39sUZpjHx5Tq+bkpFSCOS7GLHywn79629J4VJD4fVvyU1gQxrMz2Dw7akvD8iOPRYqQqxVScT44jMIXg4hEhyLk2g7ErXP/Zro3n7NS5ymse+409nkafrGu601znx+baUoRsoU5dEl/S08pP9Zr7lY0k7TQf5iW2yoMqvRnSieHUMNvPqKlcQbmABBohs1oapZwiEQCsX/SSSR5mCz8c9C8RqfRfIT3LAFgVxUdKBvhdtODeATdV0SQivvBfOAipySV0cXYBOkODo0juhQcPFCRxf/fLGDokn7lP075pE5kQZ5T2VePRL9adovda+9bKCcaN+esKhC7xJxI0XBMwKZygJn9gqmjSFWA9oBGlUGeE04l79K57S/mqdf152t9FUSBB1hDivaeT+legG69wCfuebex2RnUEJ+nOAkvNj4pyR91PxTuup+M81KTZytEi5rNma2+GD/6CZG7S3MNWJmKwGOqUBfSE1ocBWRQNjtzV8KuzA5l9NXaAlNoqMC6OhyvPcXbcN7ZWv2z8rQA8+eO2vqrOGbBCeuvpCmj3rafeWBVlaZTdRwTa0fsS6CNj59MYQLo4ZGl3tuv0ZguI7DImGkzUPQbOsnEJ1vPsWS41SKn/5fjhjPyWmgRGy0FCYe2cH+Jr1gUauQgQrWsdJtW4XAdFq1+pvXJS002jIwNS8RwPH2QkmTcnZ }}
-          aws-region: us-east-2
+          aws-region:${{ us-east-2 }}
       # Step 5
       - name: Build Application and Run unit Test
         run: python app.py & pytest
